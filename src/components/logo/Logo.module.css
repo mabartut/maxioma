@@ -1,0 +1,23 @@
+.logoLink {
+    display: block;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.logoContainer {
+    position: relative;
+    width: 280px;
+    height: 46px;
+    transition: width 0.2s ease, height 0.2s ease;
+}
+
+.logoImage {
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .logoContainer {
+        width: 176px;
+        height: 29px;
+    }
+}
