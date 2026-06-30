@@ -1,0 +1,25 @@
+.gallery {
+    display: flex; /* Располагаем полосы в ряд */
+    height: 400px; /* Задайте высоту контейнера */
+    gap: 8px; /* Отступ между полосами */
+}
+
+.slide {
+    flex: 1; /* Все полосы занимают равную долю пространства */
+    transition: flex 0.5s ease; /* Плавное изменение ширины */
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    background: pink;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Картинка заполняет полосу */
+    display: block;
+}
+
+.slide.active {
+    flex: 3; /* Активная полоса становится шире (например, в 3 раза) */
+}
