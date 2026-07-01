@@ -1,4 +1,4 @@
-// components/ui/ButtonText/ButtonText.tsx
+// components/ui/TextWithGradient/TextWithGradient.tsx
 import React from 'react';
 import styles from './ButtonText.module.css';
 

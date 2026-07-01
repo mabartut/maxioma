@@ -1,4 +1,4 @@
-// components/ui/Heading/ButtonText.tsx
+// components/ui/Heading/TextWithGradient.tsx
 import React from 'react';
 import styles from './Heading.module.css';
 

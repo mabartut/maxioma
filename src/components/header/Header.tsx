@@ -1,6 +1,7 @@
 import styles from './Header.module.css';
 import {Logo} from "@/components/logo/Logo";
 import {Button} from "@/components/button/Button";
+import {DropdownMenu} from "@/components/dropdown-menu/DropdownMenu";
 
 const Header = () => {
     const navItems = ['Экосистема', 'Продукты', 'О компании', 'Карьера', 'Решения', 'Контакты'];
@@ -10,6 +11,7 @@ const Header = () => {
             <div className={styles.container}>
                 <Logo/>
                 {/* Навигация */}
+                    <DropdownMenu label={'qwe'} items={[{label: 'i1', href: '/'}]}/>
                 <nav className={styles.nav}>
                     <ul className={styles.navList}>
                         {navItems.map((item) => (

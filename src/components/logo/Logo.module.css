@@ -1,13 +1,10 @@
 .logoLink {
     display: block;
-    text-decoration: none;
-    flex-shrink: 0;
-}
-
-.logoContainer {
     position: relative;
     width: 280px;
     height: 46px;
+    flex-shrink: 0;
+    text-decoration: none;
     transition: width 0.2s ease, height 0.2s ease;
 }
 
@@ -16,7 +13,7 @@
 }
 
 @media (max-width: 768px) {
-    .logoContainer {
+    .logoLink {
         width: 176px;
         height: 29px;
     }

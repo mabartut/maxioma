@@ -1,22 +1,25 @@
 /* styles/colors.css */
 :root {
     /* Базовые цвета */
-    --color-white: #FFFFFF;
-    --color-black: #1A1A1A;
-    --color-grey: #9CA3AF;
-    --color-blue: #2563EB;
-    --color-orange: #F97316;
-    --color-green: #22C55E;
+    --color-white-maxioma: #FFFFFF;
+    --color-black-maxioma: #000000;
+    --color-grey-maxioma: #767B85;
+    --color-blue-maxioma: #0D58FF;
+    --color-orange-maxioma: #ED6C0E;
+    --color-green-maxioma: #9ED413;
+    --color-podelu: #A2261A;
 
     /* Градиенты */
-    --gradient-orange: linear-gradient(135deg, #F97316, #FB923C);
-    --gradient-green: linear-gradient(135deg, #22C55E, #4ADE80);
-    --gradient-green-2: linear-gradient(135deg, #16A34A, #86EFAC);
-    --gradient-blue: linear-gradient(135deg, #2563EB, #60A5FA);
-    --gradient-dark-blue: linear-gradient(135deg, #1E3A5F, #1E40AF);
-    --gradient-black-dark-blue: linear-gradient(135deg, #1A1A1A, #1E3A5F);
+    --gradient-green: linear-gradient(#BFFF75 0%, #9ED413 100%);
+    /*--gradient-green-2: linear-gradient(135deg, #??????, #??????);*/
+    /*--gradient-orange: linear-gradient(135deg, #??????, #??????);*/
+    --gradient-blue: linear-gradient(#04DBFE 0%, #0D58FF 100%);
+    /*--gradient-dark-blue: linear-gradient(135deg, #??????, #??????);*/
+    /*--gradient-black-dark-blue: linear-gradient(135deg, #??????, #??????);*/
 
-    /* Радужные */
-    --rainbow-soft: linear-gradient(135deg, #FCD34D, #F59E0B, #EF4444, #EC4899, #8B5CF6, #3B82F6);
-    --rainbow-hard: linear-gradient(135deg, #FBBF24, #F97316, #EF4444, #DB2777, #7C3AED, #2563EB);
+    /*!* Остальные *!*/
+    /*--color-dark-blue: #??????;*/
+    /*--rainbow-soft: linear-gradient(135deg, #??????, #??????, #??????, #??????, #??????, #??????);*/
+    /*--rainbow-hard: linear-gradient(135deg, #??????, #??????, #??????, #??????, #??????, #??????);*/
+    /*--gradient-green-maxioma-ot-zakazchika: linear-gradient(135deg, #??????, #??????);*/
 }
