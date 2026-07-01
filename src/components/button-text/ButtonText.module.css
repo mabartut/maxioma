@@ -1,0 +1,12 @@
+/* components/ui/ButtonText/ButtonText.module.css */
+.small {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 500;
+}
+
+.large {
+    font-size: 24px;
+    line-height: normal;
+    font-weight: 500;
+}

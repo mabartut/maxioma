@@ -1,0 +1,17 @@
+/* components/ui/Button/Button.module.css */
+.button {
+    background: transparent;
+    color: #1a1a1a;
+    border: none;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background: var(--color-orange);
+    color: white;
+}

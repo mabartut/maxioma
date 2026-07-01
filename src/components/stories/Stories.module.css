@@ -5,6 +5,8 @@
 }
 
 .slide {
+    width: 80px;
+    height: 474px;
     flex: 1; /* Все полосы занимают равную долю пространства */
     transition: flex 0.5s ease; /* Плавное изменение ширины */
     overflow: hidden;
@@ -21,5 +23,7 @@
 }
 
 .slide.active {
+    width: 1293px;
+    height: 474px;
     flex: 3; /* Активная полоса становится шире (например, в 3 раза) */
 }

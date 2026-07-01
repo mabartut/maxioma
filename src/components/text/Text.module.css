@@ -1,0 +1,14 @@
+/* components/ui/ButtonText/ButtonText.module.css */
+.default {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+}
+
+.card {
+    font-size: 20px;
+    line-height: 100px;
+    font-weight: 400;
+    margin: 0;
+}

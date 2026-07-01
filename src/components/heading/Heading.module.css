@@ -1,0 +1,28 @@
+/* components/ui/Heading/ButtonText.module.css */
+.h1 {
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.h2 {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.h3 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.h4 {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 600;
+    margin: 0;
+}

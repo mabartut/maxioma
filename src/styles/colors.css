@@ -1,0 +1,22 @@
+/* styles/colors.css */
+:root {
+    /* Базовые цвета */
+    --color-white: #FFFFFF;
+    --color-black: #1A1A1A;
+    --color-grey: #9CA3AF;
+    --color-blue: #2563EB;
+    --color-orange: #F97316;
+    --color-green: #22C55E;
+
+    /* Градиенты */
+    --gradient-orange: linear-gradient(135deg, #F97316, #FB923C);
+    --gradient-green: linear-gradient(135deg, #22C55E, #4ADE80);
+    --gradient-green-2: linear-gradient(135deg, #16A34A, #86EFAC);
+    --gradient-blue: linear-gradient(135deg, #2563EB, #60A5FA);
+    --gradient-dark-blue: linear-gradient(135deg, #1E3A5F, #1E40AF);
+    --gradient-black-dark-blue: linear-gradient(135deg, #1A1A1A, #1E3A5F);
+
+    /* Радужные */
+    --rainbow-soft: linear-gradient(135deg, #FCD34D, #F59E0B, #EF4444, #EC4899, #8B5CF6, #3B82F6);
+    --rainbow-hard: linear-gradient(135deg, #FBBF24, #F97316, #EF4444, #DB2777, #7C3AED, #2563EB);
+}

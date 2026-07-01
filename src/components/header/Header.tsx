@@ -1,5 +1,6 @@
 import styles from './Header.module.css';
 import {Logo} from "@/components/logo/Logo";
+import {Button} from "@/components/button/Button";
 
 const Header = () => {
     const navItems = ['Экосистема', 'Продукты', 'О компании', 'Карьера', 'Решения', 'Контакты'];
@@ -21,10 +22,9 @@ const Header = () => {
                     </ul>
                 </nav>
 
-                {/* Кнопка */}
-                <button className={styles.consultationBtn}>
+                <Button>
                     Получить консультацию
-                </button>
+                </Button>
             </div>
         </header>
     );
