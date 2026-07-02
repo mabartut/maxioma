@@ -15,7 +15,7 @@ export const Heading = (props: HeadingProps) => {
     const Tag = variant;
 
     return (
-        <Tag className={`${styles[variant]} ${className}`}>
+        <Tag className={`${styles[variant]} ${className} ${styles.heading}`}>
             {children}
         </Tag>
     );

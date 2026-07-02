@@ -1,0 +1,23 @@
+.section {
+    padding: 178px;
+    background-color: var(--color-black-maxioma);
+    color: var(--color-white-maxioma);
+
+    h1 {
+        margin-bottom: 55px;
+        text-align: center;
+    }
+
+    .text {
+        margin-bottom: 100px;
+        text-align: center;
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}

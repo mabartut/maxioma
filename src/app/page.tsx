@@ -3,11 +3,11 @@ import Stories from "@/components/stories/Stories";
 import {Heading} from "@/components/heading/Heading";
 import {TextWithGradient} from "@/components/text-with-gradient/TextWithGradient";
 import {Button} from "@/components/button/Button";
+import {Advantages} from "@/app/home/advantages/Advantages";
 
 export default function Home() {
     return (
-        <div className={`${styles.page} container`}>
-            <main className={styles.main}>
+            <main className={`${styles.main} container`}>
                 MAIN
 
                 <Heading variant={"h1"}>
@@ -58,7 +58,8 @@ export default function Home() {
                 <Button variant={'4_Blue'}>Кнопка 4_Blue</Button>
                 <Button variant={'5_Blue'}>Кнопка 5_Blue</Button>
                 <Button variant={'5_Blue'} disabled>Кнопка 5_Blue</Button>
+
+                <Advantages/>
             </main>
-        </div>
     );
 }

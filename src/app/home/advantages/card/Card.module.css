@@ -1,0 +1,36 @@
+.card {
+    width: 416px;
+    padding: 40px;
+    color: var(--color-white-maxioma);
+    font-family: Inter Tight, Helvetica, sans-serif;
+    position: relative;
+    border-radius: 22px;
+    background-color: #171E2F;
+    overflow: hidden;
+}
+
+.number {
+    margin-bottom: 20px;
+    color: var(--color-green-maxioma);
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 700;
+}
+.title {
+    margin-bottom: 20px;
+    color: var(--color-white-maxioma);
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.circle {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: var(--color-green-maxioma);
+    filter: blur(150px);
+    position: absolute;
+    left: 340px;
+    top: -130px;
+}

@@ -1,5 +1,5 @@
-/* components/ui/TextWithGradient/TextWithGradient.module.css */
 .default {
+    font-family: Inter Tight, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 1.5;
     font-weight: 400;
@@ -7,8 +7,9 @@
 }
 
 .card {
+    font-family: Inter Tight, Helvetica, sans-serif;
     font-size: 20px;
-    line-height: 100px;
+    line-height: 20px;
     font-weight: 400;
     margin: 0;
 }
