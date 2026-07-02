@@ -1,17 +1,141 @@
-/* components/ui/Button/Button.module.css */
 .button {
-    background: transparent;
-    color: #1a1a1a;
-    border: none;
-    padding: 16px 32px;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 8px;
+    padding-block: 18px;
+    border-radius: 50px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    font-family: inherit;
+    transition: color 0.2s, border-color 0.2s, background-color 0.2s, background 0.2s;
+    border: 1px solid;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
 }
 
-.button:hover {
-    background: var(--color-orange);
-    color: white;
+.button:disabled {
+    cursor: not-allowed;
+}
+
+.variant1 {
+    padding-inline: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    color: var(--color-black-maxioma);
+    border-color: var(--color-black-maxioma);
+}
+
+.variant1:hover:not(:disabled) {
+    background-color: var(--color-blue-maxioma);
+    border-color: var(--color-blue-maxioma);
+    color: var(--color-white-maxioma);
+}
+
+.variant1:disabled {
+    background: var(--color-black-maxioma);
+    border-color: var(--color-black-maxioma);
+    color: var(--color-white-maxioma);
+}
+
+.variant2 {
+    padding-inline: 24px;
+    background: transparent;
+    color: var(--color-black-maxioma);
+    border-color: var(--color-black-maxioma);
+}
+
+.variant2:hover:not(:disabled) {
+    background-color: var(--color-blue-maxioma);
+    border-color: var(--color-blue-maxioma);
+    color: var(--color-white-maxioma);
+}
+
+.variant2:disabled {
+    background: var(--color-black-maxioma);
+    border-color: var(--color-black-maxioma);
+    color: var(--color-white-maxioma);
+}
+
+.variant4 {
+    padding-inline: 29px;
+    background: transparent;
+    color: var(--color-white-maxioma);
+    border-color: var(--color-white-maxioma);
+}
+
+.variant4:hover:not(:disabled) {
+    background-color: var(--color-green-maxioma);
+    border-color: var(--color-green-maxioma);
+    color: var(--color-black-maxioma);
+}
+
+.variant5 {
+    padding-inline: 29px;
+    background: transparent;
+    color: var(--color-black-maxioma);
+    border-color: var(--color-black-maxioma);
+}
+
+.variant5:hover:not(:disabled) {
+    background-color: var(--color-green-maxioma);
+    border-color: var(--color-green-maxioma);
+    color: var(--color-black-maxioma);
+}
+
+.variant6 {
+    padding-inline: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    color: var(--color-white-maxioma);
+    border-color: var(--color-white-maxioma);
+}
+
+.variant6:hover:not(:disabled) {
+    background-color: var(--color-green-maxioma);
+    border-color: var(--color-green-maxioma);
+    color: var(--color-black-maxioma);
+}
+
+.variant6:disabled {
+    background: var(--color-black-maxioma);
+    border-color: var(--color-black-maxioma);
+    color: var(--color-white-maxioma);
+}
+
+.variant7 {
+    padding-inline: 29px;
+    background-color: var(--color-green-maxioma);
+    border-color: var(--color-green-maxioma);
+    color: var(--color-black-maxioma);
+}
+
+.variant7:hover:not(:disabled) {
+    background: var(--gradient-green);
+    border-color: transparent;
+}
+
+.variant4_Blue {
+    padding-inline: 29px;
+    background: transparent;
+    color: var(--color-white-maxioma);
+    border-color: var(--color-white-maxioma);
+}
+
+.variant4_Blue:hover:not(:disabled) {
+    background-color: var(--color-blue-maxioma);
+    border-color: var(--color-blue-maxioma);
+}
+
+.variant5_Blue {
+    padding-inline: 29px;
+    background: transparent;
+    color: var(--color-black-maxioma);
+    border-color: var(--color-black-maxioma);
+}
+
+.variant5_Blue:hover:not(:disabled) {
+    background-color: var(--color-blue-maxioma);
+    border-color: var(--color-blue-maxioma);
+    color: var(--color-white-maxioma);
 }

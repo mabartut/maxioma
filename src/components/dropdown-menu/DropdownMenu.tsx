@@ -1,28 +1,46 @@
 'use client';
 
-import React, { useState } from 'react';
-import Link from 'next/link';
+import React, {useState, useRef} from 'react';
 import styles from './DropdownMenu.module.css';
-
-type DropdownItem = {
-    href: string;
-    label: string;
-};
 
 type DropdownMenuProps = {
     label: string;
-    items: DropdownItem[];
+    children: React.ReactNode;
 };
 
 export const DropdownMenu = (props: DropdownMenuProps) => {
-    const { label, items } = props;
+    const {label, children} = props;
     const [isOpen, setIsOpen] = useState(false);
+    const dropdownRef = useRef<HTMLDivElement>(null);
+    const buttonRef = useRef<HTMLButtonElement>(null);
 
-    const toggleMenu = () => setIsOpen(!isOpen);
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+    const closeMenu = () => setIsOpen(false);
+
+    // Фокусируем кнопку при открытии
+    React.useEffect(() => {
+        if (isOpen && buttonRef.current) {
+            buttonRef.current.focus();
+        }
+    }, [isOpen]);
+
+    const handleBlur = (event: React.FocusEvent<HTMLDivElement>) => {
+        // Проверяем, уходит ли фокус за пределы компонента
+        if (!dropdownRef.current?.contains(event.relatedTarget as Node)) {
+            closeMenu();
+        }
+    };
 
     return (
-        <div className={styles.dropdown}>
+        <div
+            className={styles.dropdown}
+            ref={dropdownRef}
+            onBlur={handleBlur}
+        >
             <button
+                ref={buttonRef}
                 className={styles.dropdownButton}
                 onClick={toggleMenu}
                 aria-expanded={isOpen}
@@ -33,17 +51,14 @@ export const DropdownMenu = (props: DropdownMenuProps) => {
 
             {isOpen && (
                 <ul className={styles.dropdownMenu}>
-                    {items.map((item) => (
-                        <li key={item.href}>
-                            <Link
-                                href={item.href}
-                                className={styles.dropdownItem}
-                                onClick={() => setIsOpen(false)}
-                            >
-                                {item.label}
-                            </Link>
-                        </li>
-                    ))}
+                    {/*{React.Children.map(children, (child) => {*/}
+                    {/*    if (React.isValidElement(child)) {*/}
+                    {/*        return React.cloneElement(child);*/}
+                    {/*    }*/}
+                    {/*    return child;*/}
+                    {/*})}*/}
+                    {children}
+
                 </ul>
             )}
         </div>
