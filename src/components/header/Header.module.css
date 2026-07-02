@@ -1,12 +1,11 @@
 /* Header */
 .header {
     width: 100%;
-    padding: 20px 0;
-    background-color: #ffffff;
-    border-bottom: 1px solid #eaeaea;
+    padding: 22px;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    /*background: red;*/
+    backdrop-filter: blur(60px);
 }
 
 /* Контейнер */

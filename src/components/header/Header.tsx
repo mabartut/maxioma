@@ -10,17 +10,13 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.container}>
-                <Logo/>
-                {/* Навигация */}
+                <Logo variant={'header'}/>
+
+                <Link href="/ecosystem">ecosystem</Link>
+
                 <DropdownMenu label={'qwe'}>
                     <li>
-                        <Link href="/123">123</Link>
-                    </li>
-                    <li>
-                        <Link href="/456">456</Link>
-                    </li>
-                    <li>
-                        <Link href="/789">789</Link>
+                        <Link href="/ecosystem">ecosystem</Link>
                     </li>
                 </DropdownMenu>
                 <nav className={styles.nav}>

@@ -1,8 +1,6 @@
 .logoLink {
     display: block;
     position: relative;
-    width: 280px;
-    height: 46px;
     flex-shrink: 0;
     text-decoration: none;
     transition: width 0.2s ease, height 0.2s ease;
@@ -12,9 +10,24 @@
     object-fit: contain;
 }
 
+.header {
+    width: 280px;
+    height: 46px;
+}
+
+.footer {
+    width: 311px;
+    height: 51px;
+}
+
 @media (max-width: 768px) {
-    .logoLink {
+    .header {
         width: 176px;
         height: 29px;
+    }
+
+    .footer {
+        width: 335px;
+        height: 55px;
     }
 }

@@ -6,7 +6,7 @@ import {Button} from "@/components/button/Button";
 
 export default function Home() {
     return (
-        <div className={styles.page}>
+        <div className={`${styles.page} container`}>
             <main className={styles.main}>
                 MAIN
 
