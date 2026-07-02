@@ -3,10 +3,9 @@ import {Logo} from "@/components/logo/Logo";
 import {Button} from "@/components/button/Button";
 import {DropdownMenu} from "@/components/dropdown-menu/DropdownMenu";
 import Link from "next/link";
+import {Navigation} from "@/components/header/navigation/Navigation";
 
 const Header = () => {
-    const navItems = ['Экосистема', 'Продукты', 'О компании', 'Карьера', 'Решения', 'Контакты'];
-
     return (
         <header className={styles.header}>
             <div className={styles.container}>
@@ -19,17 +18,7 @@ const Header = () => {
                         <Link href="/ecosystem">ecosystem</Link>
                     </li>
                 </DropdownMenu>
-                <nav className={styles.nav}>
-                    <ul className={styles.navList}>
-                        {navItems.map((item) => (
-                            <li key={item} className={styles.navItem}>
-                                <a href={`#${item.toLowerCase()}`} className={styles.navLink}>
-                                    {item}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </nav>
+                <Navigation/>
 
                 <Button variant={'1'}>
                     Получить консультацию

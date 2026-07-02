@@ -28,16 +28,19 @@
 }
 
 .dropdownMenu {
+    padding: 50px;
     position: absolute;
     top: calc(100% + 8px);
     left: 0;
     min-width: 200px;
     border-radius: 8px;
-    padding: 8px 0;
     margin: 0;
     list-style: none;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
     animation: slideDown 0.2s ease;
+    backdrop-filter: blur(60px);
+
+
 }
 
 .dropdownItem {
